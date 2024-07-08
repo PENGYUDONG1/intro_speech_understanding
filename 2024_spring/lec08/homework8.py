@@ -18,3 +18,4 @@ def dft_matrix(N):
             W[k,n] = np.cos(2*np.pi*k*n/N) - j*np.sin(2*np.pi*k*n/N)
     return W
 
+
