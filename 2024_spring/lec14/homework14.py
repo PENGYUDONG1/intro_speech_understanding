@@ -57,7 +57,6 @@ def what_day_is_it(lang, audiofile):
     weekday = today.isoweekday()
     if lang=="en":
         weekdays=['','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
-        
         months=['','January','February','March','April','May','June','July','August','September','October','November','December']
         text = "%s, %s %d, %d"%(weekdays[weekday],months[month],day,year)
         gtts.gTTS("Today is "+text,lang="en").save(audiofile)
